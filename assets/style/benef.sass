@@ -1,0 +1,120 @@
+@mixin spacer
+  margin-left: 10px
+  margin-right: 10px
+
+
+.image-flip
+  width: 100%
+  margin-left: auto
+  margin-right: auto
+
+.card
+  border: none
+  background: #ffffff
+  @include spacer
+  border-radius: 3%
+  box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+  height: 250px
+.card h3
+  text-align: center
+
+.card h3, p
+  color: #000!important
+
+.image-flip
+  &:hover .backside, &.hover .backside
+    -webkit-transform: rotateY(0deg)
+    -moz-transform: rotateY(0deg)
+    -o-transform: rotateY(0deg)
+    -ms-transform: rotateY(0deg)
+    transform: rotateY(0deg)
+    border-radius: .25rem
+
+  &:hover .frontside, &.hover .frontside
+    -webkit-transform: rotateY(180deg)
+    -moz-transform: rotateY(180deg)
+    -o-transform: rotateY(180deg)
+    transform: rotateY(180deg)
+
+.mainflip
+  -webkit-transition: 1s
+  -webkit-transform-style: preserve-3d
+  -ms-transition: 1s
+  -moz-transition: 1s
+  -moz-transform: perspective(1000px)
+  -moz-transform-style: preserve-3d
+  -ms-transform-style: preserve-3d
+  transition: 1s
+  transform-style: preserve-3d
+  position: relative
+
+.frontside
+  position: relative
+  -webkit-transform: rotateY(0deg)
+  -ms-transform: rotateY(0deg)
+  z-index: 2
+  margin-bottom: 30px
+ 
+  
+
+.backside
+  width: 100%
+  position: absolute
+  top: 0
+  left: 0
+  background: white
+  -webkit-transform: rotateY(-180deg)
+  -moz-transform: rotateY(-180deg)
+  -o-transform: rotateY(-180deg)
+  -ms-transform: rotateY(-180deg)
+  transform: rotateY(-180deg)
+ 
+
+.frontside, .backside
+  -webkit-backface-visibility: hidden
+  -moz-backface-visibility: hidden
+  -ms-backface-visibility: hidden
+  backface-visibility: hidden
+  -webkit-transition: 1s
+  -webkit-transform-style: preserve-3d
+  -moz-transition: 1s
+  -moz-transform-style: preserve-3d
+  -o-transition: 1s
+  -o-transform-style: preserve-3d
+  -ms-transition: 1s
+  -ms-transform-style: preserve-3d
+  transition: 1s
+  transform-style: preserve-3d
+  padding: 15px
+
+  .frontside, .backside p
+    text-align: center
+
+.frontside .card
+  height: 250px
+
+.backside .card
+  height: 250px
+
+  a
+    font-size: 18px
+    color: #007b5e !important
+
+.frontside .card .card-title, .backside .card .card-title
+  color: #007b5e !important
+
+.frontside .card .card-body img
+  width: 120px
+  height: 120px
+ 
+
+
+  // Swiper --
+
+.swiper-container
+  width: 90%
+  height: 40vh
+
+.swiper-slide
+    padding-left: 15px
+    padding-right: 15px
