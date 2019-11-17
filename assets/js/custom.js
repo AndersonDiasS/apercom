@@ -310,17 +310,52 @@
       }, 
       breakpoints: {
         // when window width is >= 320px
-        320: {
+        320: { 
+          loop:true,
           slidesPerView: 1,
-          spaceBetween: 20
+          spaceBetween: 20,
+          centeredSlides: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          }, 
         },
         // when window width is >= 480px
         480: {
-          slidesPerView: 2,
-          spaceBetween: 30
+          slidesPerView: 1,
+          spaceBetween: 30,
+          centeredSlides: true,
+          loop:true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          }, 
         },
- 
+        // when window width is >= 640px
+        640: {
+          loop:true,
+          slidesPerView: 3,
+          spaceBetween: 40,
+          centeredSlides: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          }, 
+        }
       }
+ 
     
     })
   });
+
+
+$(document).ready(function (){
+  var swiper = new Swiper('.swiper-scrollbar', {
+    slidesPerView: 4,
+    spaceBetween: 10,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'progressbar',
+    },
+  });
+})

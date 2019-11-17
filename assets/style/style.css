@@ -19,7 +19,7 @@ img {
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
   display: block;
   max-width: 100%;
-  height: auto; }
+  height: 90vh; }
 
 .carousel {
   position: relative; }
@@ -1822,7 +1822,7 @@ a {
         transform: rotate(45deg); }
 
 .cid-rH5wS7xS35 {
-  padding-top: 70px;
+  padding-top: 65px;
   padding-bottom: 60px;
   background-color: #dd1818;
   clip-path: polygon(0% 20%, 100% 0, 100% 103%, 0% 100%); }
@@ -1833,8 +1833,9 @@ a {
 
 .cid-rH5wTL0v96 {
   padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #dd1818; }
+  padding-bottom: 15vh;
+  background-color: #dd1818;
+  clip-path: polygon(0 0%, 100% 0, 100% 85%, 0% 100%); }
   .cid-rH5wTL0v96 .counter-container ul {
     margin-bottom: 0; }
     .cid-rH5wTL0v96 .counter-container ul li {
