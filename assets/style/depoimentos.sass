@@ -1,0 +1,90 @@
+.swiper-slide
+  li
+    list-style: none
+  h2
+    position: absolute
+    color: antiquewhite
+    top: 15px
+    left: 0px
+
+    &::before
+      content: ""
+      position: absolute
+      width: 50px
+      margin-top: 38px
+      height: 5px
+      background: #115ca9
+      transition: all 2s
+
+    &:hover::before
+      content: ""
+      position: absolute
+      animation: all 2s
+      width: 215px
+      margin-top: 38px
+      height: 5px
+      background: #115ca9
+
+  b
+    position: absolute
+    color: antiquewhite
+    top: 90px
+    left: 0px
+
+.swiper-button-prev, .swiper-button-next
+  display: none !important
+
+/* Swiper
+
+.swiper-slide img
+  filter: brightness(50%)
+  width: 566px
+  cursor: pointer
+  transition: all 5s
+
+  &:hover
+    filter: blur(2px) brightness(50%)
+    cursor: pointer
+    transition: all 5s
+
+.swiper-container
+  width: 100%
+
+
+  /* height: 100%;
+  height: 45vh
+
+.swiper-content
+  position: absolute
+  color: white
+  bottom: 25px
+  left: -10px
+
+  small
+    font-size: 75%
+    font-weight: 600
+
+.verify
+  color: green
+  background: #fff
+  border-radius: 50%
+
+.swiper-slide
+  text-align: center
+  font-size: 18px
+  width: 457px !important
+
+  /* Center slide text vertically
+  display: -webkit-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  -webkit-justify-content: center
+  justify-content: center
+  -webkit-box-align: center
+  -ms-flex-align: center
+  -webkit-align-items: center
+  align-items: center
+  margin-right: 0px !important
